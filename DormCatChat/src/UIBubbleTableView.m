@@ -109,7 +109,7 @@
     self.bubbleSection = [[NSMutableArray alloc] init];
 #endif
     
-    if (self.bubbleDataSource && (count = [self.bubbleDataSource rowsForBubbleTable:self]) > 0)
+    if (self.bubbleDataSource && (count = (int)[self.bubbleDataSource rowsForBubbleTable:self]) > 0)
     {
         
 #if !__has_feature(objc_arc)
@@ -186,7 +186,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    int result = [self.bubbleSection count];
+    int result = (int)[self.bubbleSection count];
     if (self.typingBubble != NSBubbleTypingTypeNobody) result++;
     return result;
 }
@@ -201,7 +201,7 @@
     return [[self.bubbleSection objectAtIndex:section] count] + 1;
 }
 
-- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Now typing
 	if (indexPath.section >= [self.bubbleSection count])
@@ -259,6 +259,10 @@
     cell.showAvatar = self.showAvatars;
     cell.backgroundColor = UIColorFromRGB(CHAT_BACKGROUND);
     return cell;
+}
+
+- (void)updateTableViewWithIndexPath {
+    
 }
 
 #pragma mark - Public interface

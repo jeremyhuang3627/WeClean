@@ -83,7 +83,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    NSLog(@"%f, %f, %f, %d", self.frame.size.width, _leftMargin, _midMargin, _starViews.count);
+    NSLog(@"%f, %f, %f, %lu", self.frame.size.width, _leftMargin, _midMargin, (unsigned long)_starViews.count);
     float desiredImageWidth = (self.frame.size.width - (_leftMargin*2) - (_midMargin*_starViews.count)) / _starViews.count;
     float imageWidth = MAX(_minStarSize.width, desiredImageWidth);
     float imageHeight = MAX(_minStarSize.height, self.frame.size.height);
@@ -130,7 +130,7 @@
     if (!_canEdit) return;
     
     _rating = 0;
-    for(int i = _starViews.count - 1; i >= 0; i--) {
+    for(int i = (int)_starViews.count - 1; i >= 0; i--) {
         UIImageView *imageView = [_starViews objectAtIndex:i];        
         if (touchLocation.x > imageView.frame.origin.x) {
             _rating = i+1;

@@ -39,6 +39,10 @@ const CGFloat kJSQMessagesCollectionViewAvatarSizeDefault = 30.0f;
 
 
 @interface JSQMessagesCollectionViewFlowLayout ()
+/**
+ *  The collection view object currently using this layout object.
+ */
+@property (readonly, nonatomic) JSQMessagesCollectionView *collectionView;
 
 @property (strong, nonatomic) NSCache *messageBubbleCache;
 

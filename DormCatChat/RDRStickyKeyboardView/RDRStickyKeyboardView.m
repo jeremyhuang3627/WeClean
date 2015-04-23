@@ -170,6 +170,7 @@ static BOOL RDRKeyboardIsFullyHidden(CGRect keyboardFrame) {
  * the RDRTextView instance should be if all text
  * is visible.
  */
+
 static inline CGFloat RDRTextViewHeight(RDRTextView *textView) {
     NSTextContainer *textContainer = textView.textContainer;
     CGRect textRect =
@@ -196,9 +197,10 @@ static CGFloat RDRContentOffsetForBottom(UIScrollView *scrollView) {
     return contentOffsetY;
 }
 
-static inline UIViewAnimationOptions RDRAnimationOptionsForCurve(UIViewAnimationCurve curve) {
-    return (curve << 16 | UIViewAnimationOptionBeginFromCurrentState);
-}
+#pragma Unused function
+//static inline UIViewAnimationOptions RDRAnimationOptionsForCurve(UIViewAnimationCurve curve) {
+//    return (curve << 16 | UIViewAnimationOptionBeginFromCurrentState);
+//}
 
 #pragma mark - RDRKeyboardInputView
 
@@ -677,8 +679,8 @@ static NSInteger const RDRInterfaceOrientationUnknown   = -1;
     NSDictionary *userInfo = notification.userInfo;
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGRect beginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-    CGFloat duration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    UIViewAnimationCurve curve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    //CGFloat duration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    //UIViewAnimationCurve curve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
   
     // Check if orientation changed
     [self _updateInputViewFrameIfOrientationChanged:endFrame];
@@ -788,7 +790,7 @@ static NSInteger const RDRInterfaceOrientationUnknown   = -1;
     viewRect.origin.y = view.bounds.size.height;
     viewRect.size = beginFrameConverted.size;
     
-    CGRect windowRect = [self.window convertRect:viewRect fromView:view];
+//    CGRect windowRect = [self.window convertRect:viewRect fromView:view];
 //    [self _scrollViewAdaptInsetsToKeyboardFrame:windowRect];
 //    [self.scrollView rdr_scrollToBottomWithOptions:RDRAnimationOptionsForCurve(curve)
 //                                          duration:duration

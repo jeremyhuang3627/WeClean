@@ -54,11 +54,6 @@ FOUNDATION_EXPORT const CGFloat kJSQMessagesCollectionViewAvatarSizeDefault;
 @interface JSQMessagesCollectionViewFlowLayout : UICollectionViewFlowLayout
 
 /**
- *  The collection view object currently using this layout object.
- */
-@property (readonly, nonatomic) JSQMessagesCollectionView *collectionView;
-
-/**
  *  Specifies whether or not the layout should enable spring behavior dynamics for its items using `UIDynamics`.
  *
  *  @discussion The default value is `NO`, which disables "springy" or "bouncy" items in the layout. 

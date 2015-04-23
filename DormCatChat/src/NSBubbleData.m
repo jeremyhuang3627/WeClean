@@ -60,7 +60,7 @@ const UIEdgeInsets textInsetsSomeone = {5, 15, 11, 10};
     isImage = NO;
     textContent = text;
     UIFont *font = [UIFont fontWithName:AVENIR_LIGHT size:15];
-    CGSize size = [(text ? text : @"") sizeWithFont:font constrainedToSize:CGSizeMake(220, 9999) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize size = [(text ? text : @"") boundingRectWithSize:CGSizeMake(220, 9999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     label.numberOfLines = 0;

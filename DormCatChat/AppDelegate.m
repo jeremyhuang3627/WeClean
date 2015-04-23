@@ -245,7 +245,7 @@
 
 -(void)updateNotificationNumberToChatViewController{
     if(_currentInstallation.badge > 0){
-        [[self.chatViewController dc_tabBarItem] setBadgeValue:[NSString stringWithFormat:@"%d",_currentInstallation.badge]];
+        [[self.chatViewController dc_tabBarItem] setBadgeValue:[NSString stringWithFormat:@"%ld",(long)_currentInstallation.badge]];
     }else{
         [[self.chatViewController dc_tabBarItem] setBadgeValue:[NSString stringWithFormat:@""]];
     }

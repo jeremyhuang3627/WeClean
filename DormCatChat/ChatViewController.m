@@ -205,6 +205,13 @@ static NSString *const CleanerCellIdentifier = @"CleanerChatCell";
     }
 }
 
+- (void)updateChatLastMessage:(NSDictionary *)lastMessageDict WithID:(NSString *)uid {
+    
+}
+
+- (void)updateChatsWithNotification:(NSDictionary *)notification {
+    
+}
 
 
 @end

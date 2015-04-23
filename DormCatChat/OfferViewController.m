@@ -82,8 +82,8 @@ static NSString * OfferDescriptionCellIdentifier = @"OfferDescriptionCellIdentif
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    NSString * topBarString = cell.textLabel.text;
+    //UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    // NSString * topBarString = cell.textLabel.text;
     EditViewController *editViewController = [EditViewController new];
     editViewController.delegate = self;
     editViewController.indexPath = indexPath;

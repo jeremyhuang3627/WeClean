@@ -179,7 +179,7 @@ typedef enum {
 {
     [picker dismissViewControllerAnimated:YES completion:^{
         NSData *imageData = UIImageJPEGRepresentation(image, 0.9);
-        NSString *imageString = [NSString base64StringFromData:imageData length:[imageData length]];
+        NSString *imageString = [NSString base64StringFromData:imageData length:(int)[imageData length]];
         [self saveDataToFirebase:imageString isImage:YES];
     }];
 }

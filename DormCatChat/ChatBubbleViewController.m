@@ -118,7 +118,7 @@ typedef enum {
     NSDictionary * dict= @{@"status":@"read"};
     [self update:UserMe ChatListWithDict:dict]; //update meta data
     if(cameraPopUpShown){
-        cameraButton = NO;
+        cameraButton = NULL;
     }
 }
 
@@ -388,7 +388,7 @@ typedef enum {
     
     NSMutableArray *array = [NSMutableArray new]; // use this array to reverse the data;
     
-    FQuery *query = [[[myChatRef queryOrderedByKey] queryEndingAtValue:[NSString stringWithFormat:@"%d",end]] queryLimitedToLast:limit];
+    FQuery *query = [[[myChatRef queryOrderedByKey] queryEndingAtValue:[NSString stringWithFormat:@"%ld",(long)end]] queryLimitedToLast:limit];
     NSLog(@"main %@", [NSThread currentThread]);
     [query observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot){
         NSBubbleData * data = [self createBubbleDataFromSnapShot:snapshot.value withKey:snapshot.key];
@@ -544,7 +544,7 @@ typedef enum {
     
     [self.view layoutIfNeeded];
     [UIView animateKeyframesWithDuration:duration delay:0 options:(curve << 16) animations:^{
-        CGFloat offset = abs(inputViewBottomViewConstraint.constant) - kbSize.height;
+        CGFloat offset = fabs(inputViewBottomViewConstraint.constant) - kbSize.height;
          inputViewBottomViewConstraint.constant += offset;
         [self.view layoutIfNeeded];
     } completion:nil];
@@ -599,7 +599,7 @@ typedef enum {
         messageCount++;
         NSLog(@"received image");
         NSData *imageData = UIImageJPEGRepresentation(image, 0.9);
-        NSString *imageString = [NSString base64StringFromData:imageData length:[imageData length]];
+        NSString *imageString = [NSString base64StringFromData:imageData length:(int)[imageData length]];
         
         NSString *dateString = [self dateStringNowWithFormat:DATE_FORMAT_STRING];
         NSDictionary * msg = @{

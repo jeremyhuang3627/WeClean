@@ -27,7 +27,7 @@ static char base64EncodingTable[64] = {
 
 @implementation NSString (NSStringAdditions)
 
-+ (NSString *) base64StringFromData: (NSData *)data length: (long)length {
++ (NSString *) base64StringFromData: (NSData *)data length: (int)length {
     unsigned long ixtext, lentext;
     long ctremaining;
     unsigned char input[3], output[4];
@@ -99,7 +99,7 @@ static char base64EncodingTable[64] = {
 + (NSData *)base64DataFromString: (NSString *)string
 {
     unsigned long ixtext, lentext;
-    unsigned char ch, inbuf[3], outbuf[4];
+    unsigned char ch, inbuf[4], outbuf[4];
     short i, ixinbuf;
     Boolean flignore, flendtext = false;
     const unsigned char *tempcstring;

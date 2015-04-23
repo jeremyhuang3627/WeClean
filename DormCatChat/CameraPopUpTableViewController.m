@@ -46,7 +46,7 @@ static NSString *const CameraPopUpTableViewCellIdentifier = @"CameraPopUpTableVi
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"tapped %d",indexPath.row);
+    NSLog(@"tapped %ld",(long)indexPath.row);
     [self.delegate cellTapped:indexPath];
 }
 @end
