@@ -1,0 +1,93 @@
+snapshot otherRef Snap (facebook:10153057522342710) {
+    accessToken = CAAMZAcJGSyi8BANOOTaOnqEXQd1hCeOKSFDwMfZC6RzbGc7NljZCLitE15BizTbED2yC1pdqIemg23V7VCBiZA0lvZAp3KVsuoM4pWSWhQfZCnWmL3NfIQe47kzB8GRU4lZAgECB1khYrKoiY04KYdZCZCZCcTtBk8141fofjknjUB0KWJFzxHiYeal6oSKQm5dUfUjd6RSJRutTzNnCiYrONi;
+    cachedUserProfile =     {
+        "age_range" =         {
+            min = 21;
+        };
+        email = "jh3627@stern.nyu.edu";
+        "first_name" = Jeremy;
+        gender = male;
+        id = 10153057522342710;
+        "last_name" = Huang;
+        link = "https://www.facebook.com/app_scoped_user_id/10153057522342710/";
+        locale = "en_US";
+        name = "Jeremy Huang";
+        picture =         {
+            data =             {
+                "is_silhouette" = 0;
+                url = "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p100x100/1469814_10151980371082710_895176747_n.jpg?oh=8d69cfcf8a1272bb93128cac108e2d70&oe=555B3B42&__gda__=1432363782_c3064973dc2e81cbbdb23465a9c92f41";
+            };
+        };
+        timezone = "-5";
+    };
+    "cleaner_chats" =     {
+        "facebook:10153057522342710" =         {
+            name = "Jeremy Huang";
+            price = "$15/h";
+            "profile_url" = "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p100x100/1469814_10151980371082710_895176747_n.jpg?oh=8d69cfcf8a1272bb93128cac108e2d70&oe=555B3B42&__gda__=1432363782_c3064973dc2e81cbbdb23465a9c92f41";
+            reviews =             {
+                "facebook:10153057522342710" =                 {
+                    accessToken = CAAMZAcJGSyi8BAP9uZCtGmR0kTaAoza4Xf2CT12Q6uQJz6ZCMuUXRjVpw9MgL5ZCGsCjFtZAygf2aQ5bfgOuUfMl5An8t4tqK4OZAfKsuyRg4DZCbfbXZCfG0XNrDPw80lvF5ZCpZA4b9sViyu8CwGKEA5VZC9mg09Qr3t0sEqIiec9qyFUxUZAcDZCOlmASR0WWEow48twfGO4MZACIJ5vcYFaTUh;
+                    cachedUserProfile =                     {
+                        "age_range" =                         {
+                            min = 21;
+                        };
+                        email = "jh3627@stern.nyu.edu";
+                        "first_name" = Jeremy;
+                        gender = male;
+                        id = 10153057522342710;
+                        "last_name" = Huang;
+                        link = "https://www.facebook.com/app_scoped_user_id/10153057522342710/";
+                        locale = "en_US";
+                        name = "Jeremy Huang";
+                        picture =                         {
+                            data =                             {
+                                "is_silhouette" = 0;
+                                url = "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p100x100/1469814_10151980371082710_895176747_n.jpg?oh=8d69cfcf8a1272bb93128cac108e2d70&oe=555B3B42&__gda__=1432363782_c3064973dc2e81cbbdb23465a9c92f41";
+                            };
+                        };
+                        timezone = "-5";
+                    };
+                    displayName = "Jeremy Huang";
+                    email = "jh3627@stern.nyu.edu";
+                    id = 10153057522342710;
+                    "review_rating" = 4;
+                    "review_text" = "\U62c9\U62c9";
+                };
+            };
+            school = CAS;
+            service = "I clean dorm rooms and do your laundry too.";
+            supplies = "I provide supplies";
+            uid = "facebook:10153057522342710";
+        };
+    };
+    displayName = "Jeremy Huang";
+    email = "jh3627@stern.nyu.edu";
+    "facebook:10153057522342710" =     {
+        accessToken = CAAMZAcJGSyi8BAP9uZCtGmR0kTaAoza4Xf2CT12Q6uQJz6ZCMuUXRjVpw9MgL5ZCGsCjFtZAygf2aQ5bfgOuUfMl5An8t4tqK4OZAfKsuyRg4DZCbfbXZCfG0XNrDPw80lvF5ZCpZA4b9sViyu8CwGKEA5VZC9mg09Qr3t0sEqIiec9qyFUxUZAcDZCOlmASR0WWEow48twfGO4MZACIJ5vcYFaTUh;
+        cachedUserProfile =         {
+            "age_range" =             {
+                min = 21;
+            };
+            email = "jh3627@stern.nyu.edu";
+            "first_name" = Jeremy;
+            gender = male;
+            id = 10153057522342710;
+            "last_name" = Huang;
+            link = "https://www.facebook.com/app_scoped_user_id/10153057522342710/";
+            locale = "en_US";
+            name = "Jeremy Huang";
+            picture =             {
+                data =                 {
+                    "is_silhouette" = 0;
+                    url = "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p100x100/1469814_10151980371082710_895176747_n.jpg?oh=8d69cfcf8a1272bb93128cac108e2d70&oe=555B3B42&__gda__=1432363782_c3064973dc2e81cbbdb23465a9c92f41";
+                };
+            };
+            timezone = "-5";
+        };
+        displayName = "Jeremy Huang";
+        email = "jh3627@stern.nyu.edu";
+        id = 10153057522342710;
+    };
+    id = 10153057522342710;
+}
